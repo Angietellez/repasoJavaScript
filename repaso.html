@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+/*
+            ¿QUE ES JAVA SCRIPT?
+            Lenguaje interpretado que se basa en programación orientada a prototipos
+            Es síncrono, es decir que tiene una cadena de ejecución secuencial.
+            Funciona del lado del cliente (usuario - navegador)
+            Débilmente tipado
+
+            var, let y const
+            var -> declaramos una variable que sea de ámbito global.
+                    En la actualidad es muy poco usada
+            let -> declaramos una variable de ámbito local
+            const -> declaramos una constante.
+
+            Tipos de Dato:
+                String -> texto ej: let nombre = "Kamilo" // let edad = "10"
+                Number -> número ej: let edad = 10
+                Float -> decimales 
+                Boolean -> true o false 
+        
+
+        let nombre
+
+        // prompt -> nos provee una alerta con una caja de texto // Método Window.prompt()
+        nombre = prompt("Ingrese su nombre");
+
+        // alert -> ventana o pop up con una indicación o msj para el usuario
+        alert("Hola " + nombre) // Window.alert()
+        
+
+        // Operadores artiméticos
+        let x = 5;
+        let y = 2;
+
+        1.  let suma = x + y;
+            console.log("La suma es: " + suma + edad + nombre + "Bienvenido ");
+            // Template Strings -> ECMA Script 6 (ES6)
+            alert(`La suma es de: 
+            ${suma}`) // []
+
+        2.  // resta = x - y
+        3.  // multiplicacion = x * y
+        4.  // division = x / y
+        5.  // residuo = x % y
+        6.  // x++ -> se aumenta en un dato o en un paso una variable
+        7.  // x+2 -> se aumenta en dos dato o en dos pasos una variable
+        8.  // x-- -> se decrementa en un dato o en un paso
+        9.  // x-2  -> se decrementa en dos datos o en dos pasos una variable
+        
+
+        // OPERADORES DE ASIGNACION / COMPARATIVOS O RELACIONALES
+        // Siempre devuelven un valor de tipo Booleano
+        let x = 2;
+        let y = "2";
+
+        document.write(`variable x: ${x} <br> variable y: ${y}`);
+
+        1. let mayor = x>y;
+           console.log(`mayor: ${mayor}`);
+        2. let mayorIgual = x>=y;
+           console.log(`mayor o igual: ${mayorIgual}`);
+        3. let menor = x<y;
+           console.log(`menor: ${menor}`);
+        4. let menorIgual = x<=y;
+           console.log(`menor o igual: ${menorIgual}`);
+        5. let igual = x==y; // let igual -> 2 = 2 true
+           console.log(`igual - mismo valor: ${igual}`);
+        6. let igualEstricto = x===y; // let igualEstricto -> 2 = "2" false NaN (Not A Number) - 22 (2 + "2")
+           console.log(`igual estricto - mismo tipo de dato y mismo valor: ${igualEstricto}`);
+        7. let distinto = variable1 != $variable2
+            
+            CamelCase = Caso Camello / Jorobas de Camello
+            let nombreApellido = "Kamilo Munevar"; - lower Case
+            const PaisNacimiento - upperCase
+        */
+
+
+
+//......................CLASE MIERCOLES 25 DE MARZO................................................................................................................................................................
+
+
+   /* 
+        // Operadores Lógicos
+        let variable1 = false;
+        let $variable2 = true;
+
+        // AND (y) símbolo ampersand &&
+        let resultadoAND = variable1&&$variable2;
+        alert(`Resultado AND: ${resultadoAND}`);
+
+        /* 
+            Para comentar Ctrl + K + C / Ctrl + }
+            Para descomentar Ctrl + K + U / Ctrl + } 
+
+            Ampersand &&
+            V && F = F
+            F && V = F
+            F && F = F
+            V && V = V
+        */
+
+        /*
+        // OR (o) símbolo pipe ||
+        let resultadoOR = variable1||$variable2;
+        alert(`Resultado OR: ${resultadoOR}`);
+
+        
+            Pipe ||
+            V || F = V
+            F || V = V
+            V || V = V
+            F || F = F
+            var resultadoAND = variable1||$variable2;
+           alert(`Resultado AND: ${resultadoAND}`);
+          */
+    
+
+        /* 
+        // NEGACION !
+        let resultadoNOT = !variable1; // Esta declaración indica negación de una variable
+        alert(`Resultado NOT: ${resultadoNOT}`);
+
+
+ // ------------------------- Arreglos O ARRAY ------------------------------------------
+        /* 
+         Variable que almacena gran cantidad de datos, estos datos se van
+         a manejar siempre desde la posición 0
+         */
+
+        /*
+        let dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
+
+        for (i = 0; i < dias.length; i++) {
+            document.write(`${dias[i]} <br>`);
+        } 
+        */
+
+       
+</script>
+</body>
+</html>

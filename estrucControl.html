@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+ /* --------------------- Estructuras de control ------------------------------------------
+        /* 
+            Permite al sistema trabajar con relación a las decisiones o selecciones de un usuario
+            Se dividen en:
+             - Selectiva (Control if / else)
+             - Múltiple (Control Switch)
+             - Iterativas (For, While, Do While)
+         */
+
+
+
+        // ---------------- CONTROL DE FLUJO IF - (Estructura selectiva) ---------------------
+        /* 
+           Si la condicón se cumple, se ejecutará una determinada sentencia.
+           Código spaguetti: Anidación de condicionales if / else
+           if(){
+               if(){
+                    if(){
+
+                    }
+               }
+           }
+
+
+           if(evaluación){
+               bloque de código
+           } else {
+               segundo bloque de código
+           }
+         */
+
+         /*
+         let respuesta = prompt("Ingrese un número mayor a 5"); // Nos devuelve un tipo de dato String
+
+         let numero1 = respuesta.parseInt(respuesta) / Number(respuesta)
+
+        // EJEMPLO:   if "5" > 5
+        if (respuesta > 5) {
+            alert("Buen trabajo");
+            // Como estamos evaluando si el valor de respuesta es distinto a 6 (respuesta != 6) 
+            va a ejecutar el bloque del else
+            
+            if (respuesta != 6) {
+                alert("Perfecto!!");
+            } else {
+                alert("Esperabamos que número fuese 6");
+            }
+        } else {
+            alert("No es un número mayor a 5");
+        } */
+
+
+
+        
+        /*  ------------------   SWITCH - (Estructura multiple) -----------------------------------------------------
+        // Switch (Estructura selección múltiple)
+        
+            Ejecuta cadena de sentencias siempre y cuando la condición
+            se valide con los casos especificadosmen nuestro flujo switch
+         */
+
+        /* let opcionUsuario = prompt("Ingrese una opcion 1) Suma 2) Resta 3) multipicar");
+
+        switch(opcionUsuario){
+           case "1": 
+               let numero1 = prompt("Ingrese numero 1"); 1
+               let numero2 = prompt("Ingrese numero 2"); 2
+               let suma = numero1 + numero2;
+               alert(`EL resultado es ${suma}`);
+               break;
+           case "2": 
+               alert("Escogió el número 2");
+               break;
+           case "3": 
+               alert("Escogió el número 3");
+               break;
+           default: 
+               alert("No es un número entre 1 y 3");
+        } */
+
+
+
+       // ************** ESTRUTURAS ITERATIVAS:   1.For  2. While  3. Do While  ***************************
+        // ------------------------------------ For -----------------------------------
+        // ------- Bucle For (Estructura iterativas)
+        /* 
+           Iteración de los arreglos de datos
+           Simplificar procesos
+           Manejo de eventos
+           Repetición de acciones n cantidad de veces
+           
+
+           iteración -> Aumento o decremento de un elemento (número de vueltas o veces que debe ejecutarse)
+           for(inicialización, condición, iteración){
+               Las letras usadas para el for son:   i, j, k
+               
+            BLOQUE DE CODIGO A EJECUTAR:
+           
+         
+         for(i = 0; i <= 10; i++){
+          document.write(`Número: ${i} <br>`);
+        } 
+EJEMPLO: DEBO REVISAR (i*j) YA QUE MARCA ERROR ESTA OPERACION *******
+for (i=10 ; i<=10 ; i++)
+for (j=10 ; j<=10 ; j++)
+let result= (i*j);
+document.write(`${i} x ${j} = ${result}`)
+console.log(`${i} x ${j} = ${result}`)
+*/
+
+
+        // -------------------------------- While -------------------------------------
+        // Bucle While
+        /* 
+          Mientras se cumpla una condición, entrará a ejecutar una determinada
+          sentencia.
+          Con el ciclo no sabemos con exactitud la cantidad de iteraciones que debe hacer el bucle
+              y poder indicar en que momento debe salirse de la ejecución
+
+          while(condicion){
+              sejecutar bloque de código
+          }
+         */
+
+        /* let i = 0;
+
+        while(i<10){
+             document.write(`Número: ${i} <br>`);
+             i++;
+        } 
+        */
+
+
+
+
+
+
+/* ESTRUCTURAS ITERATIVAS: CICLO DO WHILE
+Este buble se ejecuta al menos una vez sin importar si 
+se cumple o no la condicion que estamos evaluando
+
+do {
+    bloque de codigo
+} while (la condicion)
+
+
+
+let i = 0;
+
+do {
+    i ++;
+    document.write (`Numero: ${i} <br> `);
+} while (i<10);
+
+*/
+
+
+
+/*  
+...METODOS O FUNCIONES PARA CADENAS.........
+
+OBJETO STRING
+SPLIT - romer una cadena a partir de un determinado caracter
+ARRAYFROM
+LENGTH
+SPLICE
+TOLOWERCASE - convertir la cadena a minuscula
+TOUPPERCASE - convertir la cadena a mayuscula
+JOIN
+CONCAT
+CHARART - traer caracter especifico
+TRIM - quitar espacios en blanco en los extremos
+REPEAT
+STR
+SUBSTR - extraer una subcadena desde un punto hasta determinada cantidad de caracteres
+LASTINDEXOF -la ultima posicion en la ue se encuentra un caracter en especifico
+INDEXOF - la primer posicion en a cual se encuentra un caracter en especifico
+
+*/
+
+/*
+let cadena = prompt("ingresa una frase");
+document.write(`longitud de la cadena ${cadena.length} <br>`);
+document.write(`texto en mayusculas ${cadena.toUpperCase()} <br>`);
+document.write(`texto en minusculas ${cadena.toUpperCase()} <br>`);
+document.write(`caracter en primer posicion (1) ${cadena.charAt(1)} <br>`);
+
+let caracter = prompt("Escriba un caracter a buscar");
+document.write(`<hr> <br> posicion de letra: ${cadena.indexOf(caracter)} <br>`);
+document.write(`posicion de la ultima letra: ${cadena.lastIndexOf(caracter)} <br>`);
+document.write(`split: ${cadena.split("a")}`);  //siempre nos va a devolver un array
+
+*/
+
+//replace y substr
+/*let caracter = prompt("Escriba un caracter a buscar");
+document.write(` replace: ${caracter.replace("la", "lo")} <br>`);
+document.write(`substr: ${caracter.substr(2,4)} <br>`);
+*/
+
+/* METODOS O FUNCIONES PARA LOS ARREGLOS........
+
+join - concatenar a partir de un simbolo o caracter
+concat - concatenar o unir dos o mas arreglos
+push - agregar datos a un arreglo, siempre los anexa en la ultima posicion
+splice - obtenemos una porcion del arreglo
+shift - eliminar el dato que se encuentre en la posicion 0
+sort - ordenar un arreglo de mayor a menor
+unshift - agregar datos en la posicion 0
+map (ES6)
+reverse - invertir el arreglo
+pop - eliminamos el dato de la ultima posicion del arreglo
+find
+*/
+
+/*
+let alfa1 = ["A", "B", "C"];
+let alfa2 = ["D", "E", "F"];
+let grupoA,
+    grupoB,
+    inverso;
+
+grupoA = alfa1.concat(alfa2);
+document.write(grupoA + "<br>"); 
+
+grupoB = grupoA.join("-");
+document.write(grupoB + "<br>");
+
+grupoA.pop();
+document.write(grupoA + "<br>");
+
+grupoA.push("G");
+document.write(grupoA + "<br>");
+
+grupoA.shift();
+document.write(grupoA + "<br>");
+
+grupoA.unshift("Z");
+document.write(grupoA + "<br>");
+
+inverso-grupoA.reverse();
+document.write(inverso + "<br>");
+
+grupoA.splice(2,0,"x","z");
+document.write(grupoA + "<br>");
+
+*/
+
+
+
+
+/*
+
+// EJERCICIO   1.
+
+let inputNum1 = prompt("Ingrese 5 numeros del 0 al 20");
+inputNum1.replace("0")
+document.write(inputNum1 + "<br>") ;
+
+let inputNum2 = prompt("Ingrese 5 numeros del 0 al 20");
+inputNum1.replace("0")
+document.write(inputNum2 + "<br>") ;
+
+let inputNum3 = prompt("Ingrese 5 numeros del 0 al 20");
+inputNum1.replace("0")
+document.write(inputNum3 + "<br>");
+
+let inputNum4 = prompt("Ingrese 5 numeros del 0 al 20");
+inputNum1.replace("0")
+document.write(inputNum4 + "<br>");
+
+let inputNum5 = prompt("Ingrese 5 numeros del 0 al 20");
+inputNum1.replace("0")
+document.write(inputNum5 + "<br>");
+
+
+// EJERCICIO   2.
+
+var inputNumX = prompt("Ingrese 5 numeros o palabras");
+for (inputNumX =0 ; inputNumX <5 ; inputNumX ++)
+{inputNumX 
+
+}
+
+
+
+
+
+
+//document.write(`<hr> <br> posicion de letra: ${cadena.indexOf(caracter)} <br>`);
+
+
+
+    </script>
+</body>
+</html>
